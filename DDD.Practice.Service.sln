@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Practice.API", "DDD.Practice.API\DDD.Practice.API.csproj", "{830EC8D4-6698-47CA-9FEB-CFD7189ED3B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Practice.API", "DDD.Practice.API\DDD.Practice.API.csproj", "{830EC8D4-6698-47CA-9FEB-CFD7189ED3B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Practice.Domain", "DDD.Practice.Domain\DDD.Practice.Domain.csproj", "{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{830EC8D4-6698-47CA-9FEB-CFD7189ED3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830EC8D4-6698-47CA-9FEB-CFD7189ED3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{830EC8D4-6698-47CA-9FEB-CFD7189ED3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
