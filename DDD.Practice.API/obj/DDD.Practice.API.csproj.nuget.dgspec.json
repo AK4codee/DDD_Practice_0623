@@ -31,7 +31,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\DDD.Practice.Domain.csproj": {
+                "projectPath": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\DDD.Practice.Domain.csproj"
+              },
+              "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Infrastructure\\DDD.Practice.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Infrastructure\\DDD.Practice.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -60,6 +67,10 @@
               "target": "Package",
               "version": "[2.0.78, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -87,6 +98,150 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\DDD.Practice.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\DDD.Practice.Domain.csproj",
+        "projectName": "DDD.Practice.Domain",
+        "projectPath": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\DDD.Practice.Domain.csproj",
+        "packagesPath": "C:\\Users\\Annie0318_Kuo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Annie0318_Kuo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Infrastructure\\DDD.Practice.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Infrastructure\\DDD.Practice.Infrastructure.csproj",
+        "projectName": "DDD.Practice.Infrastructure",
+        "projectPath": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Infrastructure\\DDD.Practice.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Annie0318_Kuo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Annie0318_Kuo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\DDD.Practice.Domain.csproj": {
+                "projectPath": "C:\\Users\\Annie0318_Kuo\\Desktop\\PXMart\\DDD_Practice\\DDD_Practice_0623\\DDD.Practice.Domain\\DDD.Practice.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

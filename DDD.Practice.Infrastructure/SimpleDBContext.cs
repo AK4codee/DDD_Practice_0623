@@ -22,10 +22,10 @@ namespace DDD.Practice.Infrastructure
         private readonly ILogger<SimpleDBContext> _logger;
 
         // 建構式
-        public SimpleDBContext(DbContextOptions<DbContext> options) : base(options) { }
+        public SimpleDBContext(DbContextOptions<SimpleDBContext> options) : base(options) { }
 
         // DI
-        public SimpleDBContext(DbContextOptions<DbContext> options, IMediator mediator, ILogger<SimpleDBContext> logger)
+        public SimpleDBContext(DbContextOptions<SimpleDBContext> options, IMediator mediator, ILogger<SimpleDBContext> logger)
         {
             _logger = logger;
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));

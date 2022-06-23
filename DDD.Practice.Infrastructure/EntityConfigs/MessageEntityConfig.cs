@@ -1,6 +1,7 @@
 ﻿using DDD.Practice.Domain.Aggregates.MessageAggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DDD.Practice.Infrastructure.EntityConfigs
 {
@@ -13,7 +14,7 @@ namespace DDD.Practice.Infrastructure.EntityConfigs
             builder.Ignore(x => x.DomainEvents);
 
             builder.Property(x => x.TypeEnum).HasColumnName("type_one");
-            config.Property(t => t.TypeTwo).HasColumnName("type_two").HasConversion(new ValueConverter<TwoType, int>(from => from.Id, to => TwoType.From(to)));
+            builder.Property(t => t.TypeTwo).HasColumnName("type_two").HasConversion(new ValueConverter<TwoType, int>(from => from.Id, to => TwoType.From(to)));
             builder.Property(x => x.Content).HasColumnName("content").IsRequired(false);
             builder.Property(x => x.CreateTime).HasColumnName("create_time");
         }
