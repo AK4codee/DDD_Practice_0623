@@ -15,8 +15,4 @@
     <ProjectReference Include="..\DDD.Practice.Domain\DDD.Practice.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="SeedWork\" />
-  </ItemGroup>
-
 </Project>

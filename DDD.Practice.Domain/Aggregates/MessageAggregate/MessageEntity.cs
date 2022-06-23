@@ -11,6 +11,7 @@ namespace DDD.Practice.Domain.Aggregates.MessageAggregate
     {
         // 定義資料
         public OneType TypeEnum { get; private set; }
+        public TwoType TypeTwo { get; private set; }
         public string Content { get; private set; }
         public DateTime CreateTime { get; private set; }
 
@@ -18,12 +19,14 @@ namespace DDD.Practice.Domain.Aggregates.MessageAggregate
         public MessageEntity(OneType typeOne, int typeTwo, string content)
         {
             TypeEnum = typeOne;
+            TypeTwo = TwoType.From(typeTwo);
             Content = content;
             CreateTime = DateTime.Now;
         }
         public void UpdateMessage(OneType typeOne, int typeTwo, string content)
         {
             TypeEnum = typeOne;
+            TypeTwo = TwoType.From(typeTwo);
             Content = content;
         }
     }
