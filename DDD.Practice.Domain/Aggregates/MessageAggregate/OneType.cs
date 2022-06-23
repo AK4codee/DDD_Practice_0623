@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DDD.Practice.Domain.Aggregates.MessageAggregate
 {
-    internal class OneType
+    public enum OneType
     {
+        Default,
+        One,
+        Two,
+        Three,
     }
 }
