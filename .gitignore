@@ -1,7 +1,7 @@
-/src/PXGo.Study.Domain/obj
-/src/PXGo.Study.Domain/bin
-/src/PXGo.Study.API/bin
-/src/PXGo.Study.API/obj
-/src/PXGo.Study.Infrastructure/bin
-/src/PXGo.Study.Infrastructure/obj
+/DDD.Practice.Domain/obj
+/DDD.Practice.Domain/bin
+/DDD.Practice.API/bin
+/DDD.Practice.API/obj
+/DDD.Practice.Infrastructure/bin
+/DDD.Practice.Infrastructure/obj
 /.vs
