@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Practice.API", "DDD.Pra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Practice.Domain", "DDD.Practice.Domain\DDD.Practice.Domain.csproj", "{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Practice.Infrastructure", "DDD.Practice.Infrastructure\DDD.Practice.Infrastructure.csproj", "{51B4924A-7978-4982-9846-DC2C7C807939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEECC706-C4E1-4EF5-A7C7-6C288ED866D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B4924A-7978-4982-9846-DC2C7C807939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B4924A-7978-4982-9846-DC2C7C807939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B4924A-7978-4982-9846-DC2C7C807939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B4924A-7978-4982-9846-DC2C7C807939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
