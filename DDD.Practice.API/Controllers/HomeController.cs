@@ -1,4 +1,5 @@
-﻿using DDD.Practice.API.Application.Queries;
+﻿using DDD.Practice.API.Application.Commands.Message;
+using DDD.Practice.API.Application.Queries;
 using DDD.Practice.API.ViewModel;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,28 @@ namespace DDD.Practice.API.Controllers
         {
             var res = new List<MessageVo>(await _mediator.Send(query, cancellationToken));
             return Ok(res);
+        }
+
+
+        [HttpPost]
+        [Route("/service/1.0/study/add_messages")]
+        public async Task<IActionResult> AddMessages([FromBody] AddMessageCommand command, CancellationToken cancellationToken)
+        {
+            return Ok(await _mediator.Send(command, cancellationToken));
+        }
+
+        [HttpPost]
+        [Route("/service/1.0/study/update_messages")]
+        public async Task<IActionResult> UpdateMessages([FromBody] UpdateMessageCommand command, CancellationToken cancellationToken)
+        {
+            return Ok(await _mediator.Send(command, cancellationToken));
+        }
+
+        [HttpPost]
+        [Route("/service/1.0/study/delete_messages")]
+        public async Task<IActionResult> DeleteMessages([FromBody] DeleteMessageCommand command, CancellationToken cancellationToken)
+        {
+            return Ok(await _mediator.Send(command, cancellationToken));
         }
     }
 }

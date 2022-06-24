@@ -1,5 +1,8 @@
+using DDD.Practice.API.Application.Commands;
 using DDD.Practice.API.Application.Queries;
+using DDD.Practice.Domain.Aggregates.MessageAggregate;
 using DDD.Practice.Infrastructure;
+using DDD.Practice.Infrastructure.Repositories;
 using DDD.Practice.Infrastructure.SeedWork;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +18,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddMediatR(typeof(MessageQuery).GetTypeInfo().Assembly);
+builder.Services.AddMediatR(typeof(BaseCommand).GetTypeInfo().Assembly);
 
 /*µù¥U AutoMapperªº profile*/
 var assemblyNames = Assembly.GetExecutingAssembly().GetReferencedAssemblies();
@@ -33,6 +36,8 @@ builder.Services.AddScoped<IUnitOfDapper>((context) =>
     Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
     return new UnitOfWork(new MySqlConnection(configuration.GetSection("MYSqlConnection:Main").Value), new MySqlConnection(configuration.GetSection("MYSqlConnection:Secondary").Value));
 });
+
+builder.Services.AddScoped<IMessageRepository, MessageRepository>();
 
 var app = builder.Build();
 
